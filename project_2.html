@@ -1217,15 +1217,15 @@
         <div class="section-label">Problem Statement</div>
         <h2 class="section-title">The Challenge</h2>
         <p class="section-text">
-          The existing retention process presented several critical challenges that were impacting the company's bottom line:
+          The existing retention process faced key challenges that were directly affecting the company’s revenue and profitability:
         </p>
 
         <div class="card">
           <ul class="custom-list">
-            <li><strong>High Acquisition Costs:</strong> It was costing the company 5x more to acquire a new customer than to retain an existing one.</li>
-            <li><strong>Contractual Vulnerability:</strong> 70% of churners were on Month-to-Month contracts, but the company lacked a system to flag them for conversion.</li>
-            <li><strong>Service Dissatisfaction:</strong> Customers with Fiber Optic service were leaving at higher rates, but the cause was not statistically quantified.</li>
-            <li><strong>Data Imbalance:</strong> Only ~26% of customers churn, making it difficult for standard models to identify them accurately without biased results.</li>
+            <li><strong>High Acquisition Costs:</strong> Acquiring a new customer costs 5x more than retaining an existing one, draining revenue unnecessarily.</li>
+            <li><strong>Contractual Vulnerability:</strong> 70% of churners were on Month-to-Month contracts, but no system flagged them for timely retention actions.</li>
+            <li><strong>Service Dissatisfaction:</strong> Fiber Optic customers were leaving at higher rates, yet the underlying issues remained unquantified.</li>
+            <li><strong>Data Imbalance:</strong> With only ~26% of customers churning, standard models struggled to detect risk without bias, limiting predictive accuracy.</li>
           </ul>
         </div>
 
@@ -1242,8 +1242,7 @@
             <div class="timeline-label">Phase 1: Discovery</div>
             <div class="timeline-title">Discovery & Data Cleaning</div>
             <div class="timeline-text">
-              Aggregated 7,043 customer records. Handled missing values in TotalCharges and performed EDA to confirm a 26.5% churn imbalance, necessitating a 
-              stratified split and weighted model approach.            
+              Aggregated 7,043 customer records, handled missing TotalCharges values, and performed exploratory data analysis to confirm a 26.5% churn imbalance, driving the use of a stratified split and a weighted modeling approach.            
             </div>
           </div>
 
@@ -1253,8 +1252,8 @@
             <div class="timeline-text">
               Developed a hybrid encoding logic:
               <ul class="custom-list">
-                <li><strong>Binary Mapping:</strong> Mapped categorical variables (Yes/No) to binary (0/1).</li>
-                <li><strong>Normalization:</strong> Mapped "No Internet/Phone Service" to 0 to maintain feature consistency.</li>
+                <li><strong>Binary Mapping:</strong> Converted Yes/No categorical variables to 0/1 for model compatibility.</li>
+                <li><strong>Normalization:</strong> Standardized "No Internet/Phone Service" to 0 to ensure consistent feature representation.</li>
                 <li><strong>One-Hot Encoding:</strong> Applied One-Hot Encoding to InternetService, Contract, and PaymentMethod.</li>       
               </ul>
               </div>
@@ -1264,8 +1263,7 @@
             <div class="timeline-label">Phase 3: Model Development</div>
             <div class="timeline-title">Model Development & Benchmarking</div>
             <div class="timeline-text">
-              Built an XGBoost model utilizing scale_pos_weight to handle class imbalance. This specifically tuned the model to catch 
-              churners (the minority class) even at the cost of some false positives.            
+              Developed an XGBoost model using scale_pos_weight to address class imbalance, prioritizing detection of churners (the minority class) while tolerating some false positives for maximum retention impact.            
             </div>
           </div>
 
@@ -1273,8 +1271,7 @@
             <div class="timeline-label">Phase 4: Validation</div>
             <div class="timeline-title">Validation & Optimization</div>
             <div class="timeline-text">
-              Implemented a 80/20 stratified split. Evaluated performance using Confusion Matrices and Classification Reports, 
-              focusing on the F1-score to balance precision and recall for business utility.            
+              Performed an 80/20 stratified split and evaluated model performance using confusion matrices and classification reports, optimizing F1-score to balance precision and recall for maximum business value.            
             </div>
           </div>
 
@@ -1282,8 +1279,7 @@
             <div class="timeline-label">Phase 5: Insights</div>
             <div class="timeline-title">Actionable Insights</div>
             <div class="timeline-text">
-              Extracted feature importance to provide a "Churn Driver" dashboard. Developed actionable recommendations for 
-              targeted campaigns based on the top risk factors identified.            
+              Extracted feature importance to create a ‘Churn Driver’ dashboard and generated actionable insights, enabling targeted retention campaigns based on the highest-risk factors.           
             </div>
           </div>
         </div>
@@ -1300,7 +1296,7 @@
 
         <div id="tab1" class="tab-content active">
           <p class="section-text">
-           The solution utilizes a Gradient Boosted Tree architecture, optimized for imbalanced classification tasks.          
+           Implemented a Gradient Boosted Tree architecture, specifically optimized to handle imbalanced classification and accurately identify high-risk churners.          
           </p>
 
           <div class="code-container">
@@ -1364,7 +1360,7 @@
         <h2 class="section-title">Results & Business Impact</h2>
         
         <p class="section-text">
-          The predictive engine provides a clear roadmap for retention, shifting the focus from broad discounts to surgical interventions.        
+          The predictive engine delivers a clear retention roadmap, enabling precise, targeted interventions instead of broad, costly discounts.        
         </p>
 
         <div class="card-grid">
@@ -1398,24 +1394,21 @@
           <div style="margin-bottom: 24px;">
             <strong style="color: var(--primary);">Financial Impact</strong>
             <ul class="custom-list">
-              <li>By identifying 259 "True Positive" churners in a single test batch, the model enables the retention of high-value Fiber Optic 
-                customers who contribute significantly to monthly recurring revenue (MRR).</li>
+              <li>By correctly identifying 259 true-positive churners in a single test batch, the model enables retention of high-value Fiber Optic customers, protecting significant monthly recurring revenue (MRR).</li>
             </ul>
           </div>
 
           <div style="margin-bottom: 24px;">
             <strong style="color: var(--primary);">Operational Improvemnt</strong>
             <ul class="custom-list">
-              <li>Replaced manual reporting with an automated risk-scoring pipeline that flags customers for retention teams the moment they 
-                enter a "high-risk" behavioral window.</li>
+              <li>Replaced manual reporting with an automated risk-scoring pipeline that instantly flags high-risk customers for retention teams, enabling timely, data-driven interventions.</li>
             </ul>
           </div>
 
           <div style="margin-bottom: 24px;">
             <strong style="color: var(--primary);">Strategic Advantages</strong>
             <ul class="custom-list">
-              <li>The analysis revealed that Month-to-Month contracts and short tenure (<12 months) are the highest risk factors, leading to a 
-                new strategic initiative to incentivize 1-year contract upgrades.</li>
+              <li>Analysis identified Month-to-Month contracts and short tenure (<12 months) as top churn risk factors, driving a strategic initiative to incentivize 1-year contract upgrades.</li>
             </ul>
           </div>
         </div>
@@ -1430,46 +1423,46 @@
         <h2 class="section-title">Key Learnings</h2>
         
         <p class="section-text">
-          This project highlighted the critical role of predictive modeling in proactive customer relationship management. Beyond simple classification, it demonstrated how data-driven decisions can directly impact revenue stability. Here are the key takeaways:
+          This project showcased the power of predictive modeling in proactive customer relationship management. Beyond basic classification, it demonstrated how data-driven insights can directly safeguard revenue and inform strategic decisions. Key takeaways include:
         </p>
 
         <div class="card">
           <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">1. Recall > Accuracy for Business Value</h3>
           <p class="section-text">
-          In the context of churn, missing a customer who is about to leave (False Negative) is much costlier than sending a discount to a loyal customer (False Positive). XGBoost emerged as the superior choice because it captured more churners through higher recall.
+          In churn prediction, missing an at-risk customer (False Negative) is far costlier than offering a discount to a loyal one (False Positive). XGBoost proved superior by achieving higher recall and capturing more churners.
           </p>
           <p class="section-text" style="margin-top: 12px;">
-            <strong>Lesson:</strong>Align model evaluation metrics with the specific cost-benefit ratio of the business problem.
+            <strong>Lesson:</strong>Align evaluation metrics with the business’s cost-benefit priorities to maximize impact.
           </p>
         </div>
 
         <div class="card">
           <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">2. Contract Structure is Strongest Predictor</h3>
           <p class="section-text">
-              The data revealed a stark contrast between contract types. Customers on month-to-month contracts were significantly more likely to churn than those on one- or two-year commitments. This "friction" in the contract serves as a massive buffer against churn.
+              Analysis revealed a stark contrast in contract types: month-to-month customers were far more likely to churn than those on one- or two-year contracts. Longer-term commitments act as a natural buffer against churn.
           </p>
           <p class="section-text" style="margin-top: 12px;">
-            <strong>Lesson:</strong> Identify "behavioral anchors" in your data that naturally encourage customer loyalty.
+            <strong>Lesson:</strong> Leverage ‘behavioral anchors’ in your data that inherently drive customer loyalty.
           </p>
         </div>
 
         <div class="card">
           <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">3. The "Value Paradox" of High Charges</h3>
           <p class="section-text">
-            Surprisingly, high monthly charges alone weren't the only driver; it was the combination of high charges and short tenure. Customers who hadn't yet realized the full value of the service were the most price-sensitive.
+            High monthly charges alone weren’t the main churn driver; the combination of high charges and short tenure proved most critical. Customers who hadn’t yet realized full service value were the most price-sensitive.
           </p>
           <p class="section-text" style="margin-top: 12px;">
-            <strong>Lesson:</strong> The first 12 months of a customer's lifecycle are the most critical for reinforcing value and "stickiness."
+            <strong>Lesson:</strong> The first 12 months of a customer’s lifecycle are key for reinforcing value and building long-term loyalty.
           </p>
         </div>
 
         <div class="card">
           <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">4. Explainability Drives Action</h3>
           <p class="section-text">
-Business stakeholders were hesitant to launch expensive retention campaigns based on a "black box" model. Using SHAP values to show that fiber-optic service issues and lack of tech support were driving churn turned the model from a math experiment into a roadmap for service improvement.         
+            Stakeholders were hesitant to invest in retention campaigns based on a ‘black box’ model. Leveraging SHAP values to reveal that fiber-optic service issues and insufficient tech support were driving churn transformed the model into a clear roadmap for service improvements.
           </p>
           <p class="section-text" style="margin-top: 12px;">
-            <strong>Lesson:</strong> Stakeholders don't just want to know who will leave; they need to know what to change to make them stay.
+            <strong>Lesson:</strong> Stakeholders need not just predictions of who will churn, but actionable insights on what to change to retain them.
           </p>
       </section>
 
@@ -1480,7 +1473,7 @@ Business stakeholders were hesitant to launch expensive retention campaigns base
         <div class="section-label">Conclusion</div>
         <h2 class="section-title">Driving Retention Through Data-Driven Insights</h2>
         <p class="section-text">
-          This project demonstrates how machine learning can be leveraged to predict customer churn and guide retention strategies. XGBoost effectively identifies at-risk customers, highlighting contract type, tenure, and service quality as primary churn drivers.        
+          This project demonstrates how machine learning shifts customer retention from reactive damage control to proactive revenue protection, identifying churn drivers like contract type and service quality to safeguard high-risk revenue streams.        
         </p>
 
       <section id="conclusion" class="content-section">
@@ -1497,16 +1490,16 @@ Business stakeholders were hesitant to launch expensive retention campaigns base
           <div class="card">
             <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--primary);">Key Recommendations</h3>
             <ul style="font-size: 14px; line-height: 1.6; padding-left: 18px;">
-              <li>Focus retention campaigns on high-risk customers (month-to-month, short tenure, high charges).</li><br />
-              <li>Promote TechSupport and OnlineSecurity services.</li><br />
-              <li>Improve service quality for high-value segments.</li><br />
-              <li>Monitor campaign outcomes and retrain models quarterly.</li><br />
+              <li>Focus retention campaigns on high-risk customers, including those on month-to-month contracts, with short tenure, or high charges.</li><br />
+              <li>Promote TechSupport and OnlineSecurity services to enhance perceived value and loyalty.</li><br />
+              <li>Improve service quality for high-value customer segments to reduce churn risk.</li><br />
+              <li>Continuously monitor campaign outcomes and retrain models quarterly to maintain predictive accuracy.</li><br />
             </ul>
           </div>
           <div class="card">
             <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--primary);">Impact</h3>
             <p style="font-size: 14px; line-height: 1.6;">
-              By using predictive analytics to proactively address churn, companies can increase customer loyalty, reduce revenue loss, and optimize marketing investments.</li>
+              By using predictive analytics to proactively address churn, companies can increase customer loyalty, reduce revenue loss, and optimize marketing investments. High-risk customers can be identified early, allowing for targeted interventions that protect critical revenue streams. <br> <br> Predictive insights also reveal key drivers of churn such as contract type, tenure, and service quality. Companies can use this information to tailor campaigns, improve services, and continuously refine strategies to strengthen long-term customer relationships.</li>
             </p>
           </div>
         </div>

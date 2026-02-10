@@ -1022,13 +1022,13 @@ ul {
   height: 120px;
   margin: 0 auto 25px;
   background: black;
-  border-radius: 0;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid white;
+  border: 2px white;
   font-size: 3rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .process-item:hover .process-icon {

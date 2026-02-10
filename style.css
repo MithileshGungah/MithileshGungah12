@@ -970,7 +970,6 @@ ul {
 }
 
 /* ===== Process Section ===== */
-/* ===== Process Section ===== */
 .process-section {
   padding: 100px 0;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.05), rgba(139, 92, 246, 0.05));
@@ -1023,7 +1022,7 @@ ul {
   height: 120px;
   margin: 0 auto 25px;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
-  border-radius: 50%;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;

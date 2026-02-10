@@ -10,6 +10,30 @@
   --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
+/* Typewriter Effect */
+.typewriter {
+  display: inline-block;
+  overflow: hidden;            /* Ensures text is hidden before typing */
+  white-space: nowrap;         /* Prevents line breaks */
+  border-right: 3px solid var(--primary); /* Cursor */
+  animation: typing 6s steps(90, end), blink-caret 0.75s step-end infinite;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* Typing animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Cursor blink */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--primary) }
+}
+
 [data-theme="light"] {
   --dark: #ffffff;
   --card-bg: #f8fafc;

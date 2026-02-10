@@ -828,13 +828,17 @@ ul {
 }
 
 .read-more {
-  margin-top: auto; /* Pushes button to bottom of card */
+  margin-top: auto;
   color: #ffffff;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-decoration: none;
+
   border: 2px solid #facc15; /* yellow border */
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
 /* --- THE ACTIVE STATE (Hover/Light) --- */

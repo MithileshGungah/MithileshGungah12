@@ -273,8 +273,6 @@ ul {
   box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
 }
 
-
-
 /* ===== Hero Section ===== */
 .hero {
   padding: 100px 0;
@@ -853,7 +851,7 @@ ul {
 }
 
 .service-card:hover h3 {
-  color: #fbbf24; /* Title turns Yellow/Gold like the demo */
+  color: #22c55e; /* green */; /* Title turns Yellow/Gold like the demo */
 }
 
 .service-card:hover p {

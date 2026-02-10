@@ -828,17 +828,15 @@ ul {
 }
 
 .read-more {
-  margin-top: auto;
+  display: inline-block !important;
+  padding: 10px 18px;
+  border: 2px solid #facc15 !important; /* yellow */
+  border-radius: 6px;
   color: #ffffff;
+  text-decoration: none;
   font-weight: 600;
   font-size: 0.8rem;
   letter-spacing: 1px;
-  text-decoration: none;
-
-  border: 2px solid #facc15; /* yellow border */
-  padding: 8px 16px;
-  border-radius: 6px;
-  display: inline-block;
 }
 
 /* --- THE ACTIVE STATE (Hover/Light) --- */

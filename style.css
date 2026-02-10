@@ -1022,11 +1022,11 @@ ul {
   height: 120px;
   margin: 0 auto 25px;
   background: black;
-  border-radius: 50px;
+  border-radius: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px white;
+  border: 2px solid white;
   font-size: 3rem;
   transition: all 0.2s;
 }

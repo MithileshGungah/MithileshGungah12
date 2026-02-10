@@ -834,6 +834,7 @@ ul {
   font-size: 0.8rem;
   letter-spacing: 1px;
   text-decoration: none;
+  border: 2px solid #facc15; /* yellow border */
 }
 
 /* --- THE ACTIVE STATE (Hover/Light) --- */

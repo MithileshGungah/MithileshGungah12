@@ -15,14 +15,14 @@
   white-space: nowrap;
   border-right: 3px solid var(--primary);
   width: 0;
-  animation: typing-title 1s steps(14, end) forwards,
-             blink-caret 0.5s step-end infinite;
+  animation: typing-title 1.6s steps(14, end) forwards,
+             blink-caret 0.9s step-end infinite;
 }
 
 /* Typing effect */
 @keyframes typing-title {
   from { width: 0; }
-  to { width: 11ch; }   /* 14 characters in "Data Scientist" */
+  to { width: 8ch; }   /* 14 characters in "Data Scientist" */
 }
 
 /* Cursor blink */

@@ -22,7 +22,7 @@
 
 @keyframes typing-title {
   from { width: 0; }
-  to { width: 13.2ch; }
+  to { width: 8ch; }
 }
 
 @keyframes blink-caret {

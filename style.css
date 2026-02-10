@@ -10,13 +10,12 @@
   --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
-/* Typewriter Effect */
-.typewriter {
-  display: inline-block;
-  overflow: hidden;            /* Ensures text is hidden before typing */
-  white-space: nowrap;         /* Prevents line breaks */
+.typewriter span {
+  display: inline-block;         /* Necessary for width animation */
+  overflow: hidden;              /* Hides text before it's typed */
+  white-space: nowrap;           /* Prevents text wrapping */
   border-right: 3px solid var(--primary); /* Cursor */
-  animation: typing 6s steps(90, end), blink-caret 0.75s step-end infinite;
+  animation: typing 6s steps(120, end) forwards, blink-caret 0.75s step-end infinite;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text-muted);
@@ -24,14 +23,13 @@
 
 /* Typing animation */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 /* Cursor blink */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--primary) }
+  50% { border-color: transparent; }
 }
 
 [data-theme="light"] {

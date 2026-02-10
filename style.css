@@ -16,8 +16,8 @@
   white-space: nowrap;
   border-right: 3px solid var(--primary);
   width: 0;
-  animation: typing-title 1.0s steps(11, end) forwards,
-             blink-caret 0.5s step-end infinite;
+  animation: typing-title 1.6s steps(4, end) forwards,
+             blink-caret 0.8s step-end infinite;
 }
 
 @keyframes typing-title {

@@ -1218,15 +1218,15 @@
         <div class="section-label">Problem Statement</div>
         <h2 class="section-title">The Challenge</h2>
         <p class="section-text">
-            Current AI models often fail to capture the nuances of human safety perceptions, leading to several critical issues:
+            As Large Language Models are increasingly used in mapping tools, travel assistants, and location-based services, their internal representations of urban space begin to shape real-world decisions. <br><br> However, auditing how AI systems “see” a city presents several critical challenges:
         </p>
 
         <div class="card">
           <ul class="custom-list">
-            <li><strong>Overestimated Risk:</strong> LLMs significantly understate safety, describing neighborhoods as "safe" only ~48-52% of the time, compared to 90% in human reviews</li>
-            <li><strong>Weak Data Alignment:</strong> AI safety assessments show weak or no correlation with actual crime statistics, whereas human reviews track crime patterns closely</li>
-            <li><strong>Systematic Gender Bias:</strong> Both GPT-5 and Claude introduce significant gender biases that do not exist in the human dataset (Airbnb), leading to Artficial Bias</li>
-            <li><strong>Misclassification:</strong> Models frequently misclassify low-crime areas as high-risk, potentially causing economic harm to local communities</li>
+            <li><strong>Opaque Spatial Representations:</strong> LLMs do not expose explicit geographic models. Their understanding of place must be inferred indirectly through behaviour and prediction patterns</li>
+            <li><strong>Multimodal Uncertainty:</strong> Modern systems process both images and text, but it is unclear whether these modalities produce a unified spatial representation or fragmented cognitive maps</li>
+            <li><strong>Digital Data Imbalance:</strong> Urban areas are unevenly represented online. Central and affluent boroughs generate more digital content than peripheral districts, potentially influencing model familiarity</li>
+            <li><strong>Lack of Measurement Frameworks:</strong> There is no established methodology for evaluating how AI systems construct and distort city-scale cognitive maps</li>
           </ul>
         </div>
 

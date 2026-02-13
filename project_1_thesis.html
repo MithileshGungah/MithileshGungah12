@@ -1361,7 +1361,7 @@
 
         
 
-        <div><img src="poster.png" alt="Impact Analysis"></div>
+        <div><img src="poster.jpg" alt="Impact Analysis"></div>
         <br />
       
 
@@ -1371,33 +1371,41 @@
         <h2 class="section-title">Key Learnings</h2>
 
         <div class="card">
-          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">1. LLMs Overestimated Risk</h3>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">1. AI Constructs Uneven Cognitive Maps</h3>
           <p class="section-text">
-            AI models tend to exaggerate unsafe tones compared to actual human residents or travelers. This suggests a "safety-first" training bias that can lead to inaccurate real-world advice.
+            Multimodal LLMs do not represent cities uniformly. Central and symbolically prominent boroughs dominate recognition, while peripheral districts are systematically less visible. This mirrors but also amplifies human centrality bias.
           </p>
         </div>
 
         <div class="card">
-          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">2. Human Reviews as Ground Truth</h3>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">2. Visibility Is Not the Same as Accuracy</h3>
           <p class="section-text">
-            The study confirmed that human-authored reviews (Airbnb) track official crime patterns much more reliably than LLMs.
+            Some boroughs are predicted frequently despite low true recognisability. This distinction between recognisability and visibility reveals how AI systems can amplify certain locations without accurately understanding them.
           </p>
         </div>
 
         <div class="card">
-          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">3. Gendered Perception Bias</h3>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">3. Multimodal Systems Are Structurally Fragmented</h3>
           <p class="section-text">
-            The discovery of a significant "Gender Safety Gap" in AI (which does not exist in the human data) proves that models introduce new biases during training or RLHF processes.
+            Image-based and text-based reasoning produce measurably different spatial maps. This suggests that multimodal models may not maintain a unified internal geography, but instead construct parallel representations.
           </p>
         </div>
 
         <div class="card">
-          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">4. Need for Place-Based Fairness</h3>
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">4. Digital Exposure Shapes AI Geography</h3>
           <p class="section-text">
-            Fairness metrics (Demographic Parity, Equalized Odds) are rarely used in travel studies, but this project demonstrates they are essential for identifying geographical discrimination in AI.
+            Model performance appears influenced by uneven digital representation of boroughs. Areas with greater online visibility are more cognitively dominant within AI systems, highlighting the role of data imbalance in spatial bias.
           </p>
         </div>
 
+        <div class="card">
+          <h3 style="font-size: 18px; margin-bottom: 16px; color: var(--gray-900);">5. Need for Spatial Auditing Frameworks</h3>
+          <p class="section-text">
+            There is currently no standard methodology for evaluating how AI systems represent urban space. This project demonstrates that recognisability and visibility metrics can serve as practical tools for auditing geographic bias in multimodal models.
+          </p>
+        </div>        
+
+        
         <div class="highlight-box">
           <h3>Future Enhancements</h3>
           <p>

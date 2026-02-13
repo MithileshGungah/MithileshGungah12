@@ -1241,35 +1241,49 @@
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-label">Phase 1: Discovery</div>
-            <div class="timeline-title">Multi-Source Data Acquisition</div>
+            <div class="timeline-title">Balanced Borough-Level Data Construction</div>
             <div class="timeline-text">
-                Aggregated three distinct pillars: 10 years of London Airbnb reviews (human experience), official London crime rates (2024-2025), and 630 targeted LLM-generated prompts.
+                Sampled all 33 London boroughs using 450+ Google Street View images and 450+ controlled textual descriptions to ensure even multimodal geographic coverage.
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-label">Phase 2: Feature Engineering</div>
-            <div class="timeline-title">Rigorous Preprocessing & Gender Validation</div>
+            <div class="timeline-label">Phase 2: Preprocessing</div>
+            <div class="timeline-title">Input Standardisation & Quality Control</div>
             <div class="timeline-text">
-                Extracted gender using Gender-Guesser, validated via Genderize.io API and manual checks to achieve 98% accuracy. Neighborhoods were mapped at the granular ONS ward-level to ensure broad geographical coverage.            </div>
-          </div>
-
-          <div class="timeline-item">
-            <div class="timeline-label">Phase 3: NLP & Semantic Analysis</div>
-            <div class="timeline-title">Ensemble Architecture</div>
-            <div class="timeline-text">
-                <ul>
-                    <li><strong>Topic Modeling:</strong> Implemented BERTopic and Prototype-Based Embeddings to categorize text into themes like Safety, Transportation, and Amenities.</li>
-                    <li><strong>Similarity Auditing:</strong> Used Sentence Transformers to measure the semantic distance between AI outputs and real human descriptions.</li>
-                </ul>
+                Normalised image resolution, removed duplicates, and standardised framing to reduce dataset-induced bias and ensure fair cross-borough comparison.
             </div>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-label">Phase 4: Validation</div>
-            <div class="timeline-title">Fairness & Statistical Evaluation</div>
+            <div class="timeline-label">Phase 3: Experimental Design</div>
+            <div class="timeline-title">AI-Adapted Urban Recognition Framework</div>
             <div class="timeline-text">
-                Applied advanced fairness metrics, including Demographic Parity and Equalized Odds, to quantify if the models favored one gender's perspective over another.
+                Operationalised Stanley Milgram’s urban recognition experiment for GPT-4, Gemini, and Claude, testing borough identification via image and text inference.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-label">Phase 4: Spatial Index Engineering</div>
+            <div class="timeline-title">Recognisability & Visibility Modeling</div>
+            <div class="timeline-text">
+                Converted predictions into borough-level confusion matrices and derived two structural indices: Recognisability (true identification strength) and Visibility (prediction dominance).
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-label">Phase 5: Cognitive Map Reconstruction</div>
+            <div class="timeline-title">Structural Pattern Analysis</div>
+            <div class="timeline-text">
+                Reconstructed model-generated cognitive maps to identify central amplification, peripheral suppression, and cross-borough attractor effects.
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-label">Phase 6: Human Benchmarking</div>
+            <div class="timeline-title">Comparison with Human Spatial Perception</div>
+            <div class="timeline-text">
+                Evaluated whether AI-generated cognitive maps align with established human centrality patterns, assessing convergence, divergence, and digitally induced distortion.
             </div>
           </div>
           
@@ -1346,7 +1360,7 @@
 
         
 
-        <div><img src="poster.jpg" alt="Impact Analysis"></div>
+        <div><img src="../images/p1_poster.png" alt="Impact Analysis"></div>
         <br />
       
 
@@ -1409,8 +1423,8 @@
         </div>
 
         <div class="sidebar-item">
-          <div class="sidebar-label">Researcher & Implementer</div>
-          <div class="sidebar-value">Mithilesh Gungah</div>
+          <div class="sidebar-label">Lead Resourcer</div>
+          <div class="sidebar-value">Kostanca Kovaci</div>
         </div>
 
         <div class="sidebar-item">
@@ -1430,7 +1444,7 @@
 
         <div class="sidebar-item">
           <div class="sidebar-label">Team</div>
-          <div class="sidebar-value">Data Scientist<br>NLP & Machine Engineer<br>Data Engineer</div>
+          <div class="sidebar-value">Lead Data Scientist<br>1 ML Engineer<br>1 DevOps Engineer</div>
         </div>
 
         <div class="sidebar-item">
@@ -1453,10 +1467,10 @@
 
       <div class="sidebar-section">
         <h3 class="sidebar-title">Actions</h3>
-        <a href="https://github.com/mithileshgungah" class="action-btn" target="_blank">
+        <a href="https://github.com/kovacikostanca/Data-Science-Portfolio/tree/main/Gendered%20Perceptions%20of%20Places%20in%20LLMs" class="action-btn" target="_blank">
           View Code on GitHub
         </a>
-        <a href="https://github.com/mithileshgungah" class="action-btn secondary">
+        <a href="https://github.com/kovacikostanca/Data-Science-Portfolio/blob/main/Gendered%20Perceptions%20of%20Places%20in%20LLMs/Gendered%20Perceptions%20of%20Places%20in%20LLMs.pdf" class="action-btn secondary">
           Download Case Study PDF
         </a>
         <a href="../index.html#project" class="action-btn secondary">
@@ -1467,12 +1481,12 @@
       <div class="sidebar-section">
         <h3 class="sidebar-title">Share Project</h3>
         <div style="display: flex; gap: 8px;">
-          <a href="https://github.com/mithileshgungah" class="action-btn secondary" style="flex: 1; padding: 10px; font-size: 18px;">🔗</a>
-          <a href="mailto:mithileshgungah@gmail.com?subject=Inquiry regarding dissertation&body=Hi Mithilesh, I saw your project on GitHub and would like to connect." 
+          <a href="https://github.com/kovacikostanca/Data-Science-Portfolio/tree/main/Gendered%20Perceptions%20of%20Places%20in%20LLMs" class="action-btn secondary" style="flex: 1; padding: 10px; font-size: 18px;">🔗</a>
+          <a href="mailto:kovacikostanca@gmail.com?subject=Inquiry regarding Customer Churn Project&body=Hi Kostanca, I saw your project at https://github.com/kovacikostanca/Data-Science-Portfolio/tree/main/Customer%20Churn%20Prediction and would like to connect." 
             class="action-btn secondary" style="flex: 1; padding: 10px; font-size: 18px; text-align: center;" title="Contact Me">
             📧
           </a>
-          <a href="https://www.linkedin.com/in/mithilesh-gungah-331133215/" target="_blank" class="action-btn secondary" style="flex: 1; padding: 10px; font-size: 18px; text-align: center;" title="LinkedIn Profile">
+          <a href="https://www.linkedin.com/in/kostanca-kovaci" target="_blank" class="action-btn secondary" style="flex: 1; padding: 10px; font-size: 18px; text-align: center;" title="LinkedIn Profile">
             💼
           </a>
         </div>
